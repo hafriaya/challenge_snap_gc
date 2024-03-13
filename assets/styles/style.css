@@ -1,3 +1,88 @@
-body{
-    background-color: #ffff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+header__nav-bar__nav-menu__nav-item__nav-link__dropdown__item {
+  list-style: none;
+}
+.header__nav-bar {
+  /* height: 100vh; */
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+}
+.header__nav-bar.active {
+  right: 0;
+}
+
+.header__nav-bar__nav-menu__humberger {
+  /* padding: 1rem; */
+  display: flex;
+}
+.header__nav-bar__nav-menu__humberger__menu {
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+}
+.header__nav-bar__nav-menu__humberger__menu__bar {
+  height: 3px;
+  width: 100%;
+  background-color: hsl(0, 0%, 8%);
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+.header__nav-bar__nav-menu__humberger__menu__bar:nth-child(1) {
+  top: 25%;
+}
+.header__nav-bar__nav-menu__humberger__menu__bar:nth-child(3) {
+  top: 75%;
+}
+.header__nav-bar__nav-menu__humberger__menu.active
+  .header__nav-bar__nav-menu__humberger__menu__bar {
+  background-color: #fff;
+}
+.header__nav-bar__nav-menu__humberger__menu.active
+  .header__nav-bar__nav-menu__humberger__menu__bar:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.header__nav-bar__nav-menu__humberger__menu.active
+  .header__nav-bar__nav-menu__humberger__menu__bar:nth-child(2) {
+  opacity: 0;
+}
+.header__nav-bar__nav-menu__humberger__menu.active
+  .header__nav-bar__nav-menu__humberger__menu__bar:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
