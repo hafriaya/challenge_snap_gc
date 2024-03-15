@@ -236,7 +236,7 @@ body {
     /* justify-content: space-between; */
     justify-content: unset;
     align-items: center;
-    overflow: hidden;
+    overflow: visible;
     max-width: 100%;
   }
   .header__navigation__nav-bar {
