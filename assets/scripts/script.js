@@ -1,10 +1,10 @@
 const hamberger = document.querySelector(
-  ".header__navigation__nav-bar__nav-menu__hamberger"
+  ".navigation__hamberger"
 );
-const navBar = document.querySelector(".header__navigation__nav-bar");
+const navBar = document.querySelector(".navigation__bar");
 
 const navLink = document.querySelectorAll(
-  ".header__navigation__nav-bar__nav-menu__nav-item__nav-link"
+  ".navigation__bar__menu__item__link"
 );
 
 
@@ -33,7 +33,7 @@ navLink.forEach((dropdownTrigger) => {
     dropdownContent.classList.toggle("show");
 
     const clickedArrow = dropdownTrigger.querySelector(
-      ".header__navigation__nav-bar__nav-menu__nav-item__nav-link__arrow"
+      ".navigation__arrow"
     );
     if (clickedArrow) {
       changeArrow(clickedArrow);
@@ -44,7 +44,7 @@ navLink.forEach((dropdownTrigger) => {
 // arrow function
 function changeArrow(clickArrow) {
   // const arrow = document.querySelector(
-  //   ".header__navigation__nav-bar__nav-menu__nav-item__nav-link__arrow"
+  //   ".navigation__arrow"
   // );
   if(clickArrow){
   const arrowSrc = clickArrow.src;
