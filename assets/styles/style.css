@@ -221,6 +221,12 @@ body {
 .partners__img-container {
   margin: 10px;
 }
+#img-container__client-maker{
+  width: 100px;
+}
+#img-container__client-audiophile{
+  width: 60px;
+}
 .partners__img-container__img {
   width: 100%;
 }
@@ -313,7 +319,7 @@ body {
     border: 1px solid hsl(0, 0%, 8%);
   }
   .navigation__bar__account__btn__register:hover,
-  .navigation__bar__account__btn__register__link:hover {
+  .navigation__bar__account__btn__link:hover {
     color: hsl(0, 0%, 8%);
   }
 
@@ -362,7 +368,7 @@ body {
     justify-content: space-between;
   }
   .partners__img-container {
-    margin: 0;
+    margin: 0 5px;
   }
 }
 
